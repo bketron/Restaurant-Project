@@ -14,7 +14,7 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "concurrently \"json-server --watch --port 3001 db.json\" \"react-scripts start\"",
+    "start": "\"json-server --watch --port 3001 db.json\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
