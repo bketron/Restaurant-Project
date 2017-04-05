@@ -1,9 +1,12 @@
 import React from 'react';
+import Menu from './Menu/menu'
 
 export default React.createClass({
   render() {
     return (
-      <h1>adssadf</h1>
+      <div>
+      	<Menu />
+      </div>
     )
   }
 })
