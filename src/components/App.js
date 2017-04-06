@@ -1,8 +1,8 @@
 import React from 'react';
-import TopArea from './TopArea'
-import Menu from './Menu/menu'
-import FoodImages from './FoodImages'
-import TabSection from './TabSection'
+import TopArea from './brennen/TopArea'
+import Menu from './brennen/Menu/menu'
+import FoodImages from './brennen/FoodImages'
+import TabSection from './brennen/TabSection'
 
 var styles = {
 	main: {
