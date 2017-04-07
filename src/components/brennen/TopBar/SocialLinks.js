@@ -64,11 +64,11 @@ export default React.createClass({
 					</li>
 
 					<li id="instagram" style={styles.instagram}>
-						<img id="instagramIcon" src={require('./assets/iconImages/instagram-512.png')} />
+						<img id="instagramIcon" src={require('./assets/iconImages/instagram-512.png')} alt="#"/>
 					</li>
 
 					<li id="openTable" style={styles.openTable}>
-						<img id="openTableIcon" src="https://components.otstatic.com/components/favicon/1.0.4/favicon/favicon-128.png" />
+						<img id="openTableIcon" src="https://components.otstatic.com/components/favicon/1.0.4/favicon/favicon-128.png" alt="#"/>
 					</li>
 				</ul>
 			</div>

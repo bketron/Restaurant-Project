@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter , Route , Link } from 'react-router-dom'
 import Menu from './Menu/menu'
 import OurStory from './OurStory'
+import Reservation from './reservation'
 
 var styles = {
 	container: {
@@ -27,7 +28,7 @@ export default React.createClass({
 
 					<Route path="/menu" component={Menu} />
 					<Route path="/ourstory" component={OurStory} />
-					<Route path="/reservations" component={ReservationForm}
+					<Route path="/reservations" component={Reservation} />
 				</div>
 			</BrowserRouter>
 		)

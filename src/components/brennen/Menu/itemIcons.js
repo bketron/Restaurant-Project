@@ -29,14 +29,11 @@ export default React.createClass({
 			}
 			})[0]
 
-		console.log(whichOnes)
-
 		return whichOnes
 	},
 	render() {
 		return (
 			<div style={styles.menuIcons}>
-				{console.log(this.whichIcons())}
 				
 				<AllergyIcon allergies={this.props.item.allergies} />
 				<FavoriteIcon favorite={this.props.item.favorite} />

@@ -104,7 +104,7 @@ export default React.createClass({
 
 					<ul style={styles.lists}>
 						{menu.appetizers.map(item=> (
-							<li>
+							<li key={'id' + item.id}>
 								<div className="namePrice">
 									<p style={styles.name}>{item.item}</p>
 									<div id={'item' + item.id} style={styles.itemInfo}>
@@ -129,7 +129,7 @@ export default React.createClass({
 
 					<ul style={styles.lists}>
 						{menu.entrees.map(item=> (
-							<li>
+							<li key={'id' + item.id}>
 								<div className="namePrice">
 									<p style={styles.name}>{item.item}</p>
 									<div id={'item' + item.id} style={styles.itemInfo}>
@@ -153,7 +153,7 @@ export default React.createClass({
 
 					<ul style={styles.lists}>
 						{menu.sides.map(item=> (
-							<li>
+							<li key={'id' + item.id}>
 								<div style={styles.sideItems}>
 									<p style={styles.sideName}>{item.item}........</p>
 									<p style={styles.sidePrice}>{item.price}</p>

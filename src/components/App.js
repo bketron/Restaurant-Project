@@ -1,6 +1,5 @@
 import React from 'react';
 import TopArea from './brennen/TopArea'
-import Menu from './brennen/Menu/menu'
 import FoodImages from './brennen/FoodImages'
 import TabSection from './brennen/TabSection'
 
