@@ -27,6 +27,7 @@ export default React.createClass({
 
 					<Route path="/menu" component={Menu} />
 					<Route path="/ourstory" component={OurStory} />
+					<Route path="/reservations" component={ReservationForm}
 				</div>
 			</BrowserRouter>
 		)
