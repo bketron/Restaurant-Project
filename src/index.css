@@ -1,11 +1,6 @@
-<<<<<<< HEAD
+
 html{box-sizing:border-box;}
 *, *:before, *:after {box-sizing: inherit;}
-=======
-html {box-sizing:border-box;}
-
-*, *:before, *:after {box-sizing:inherit}	
->>>>>>> ef499244527e6a0db31a68742d74362cb865d8e9
 
 body {
   margin: 0;

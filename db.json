@@ -1,14 +1,11 @@
 {
   "users": [
     {
+      "name": "Brett",
+      "guests": "2",
+      "date": "today",
+      "notes": "",
       "id": 1
-    },
-    {
-      "name": "dsafsa",
-      "guests": "dfaf",
-      "date": "adfaf",
-      "notes": "asdfa",
-      "id": 2
     }
   ]
 }
