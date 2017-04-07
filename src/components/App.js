@@ -25,7 +25,6 @@ export default React.createClass({
 		      	<div id="lowerSection" style={styles.lower}>
 		      		<TabSection />
 		      		<FoodImages />
-		      		<ShowReservation />
 		      	</div>
 		    </div>
     )
