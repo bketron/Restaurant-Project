@@ -1,5 +1,5 @@
 import React from 'react';
-import {addReservation} from '../api/reservation'
+import {addReservation} from '.../api/reservation'
 
 
 

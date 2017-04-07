@@ -1,37 +1,32 @@
-import React from 'react';
-import {addReservation} from '../api/reservation'
-
-
+import React from 'react'
+import {addUser} from '../api/reservation'
 
 export default React.createClass({
 	getInitialState(){
-		return{
-			fullName: '',
-			numberOfGuests: '',
+		return {
+			name: '',
+			guests: '',
 			date: '',
-			specialNotes: ''
+			notes: ''
 		}
 	},
-	update(e){
+	update(e) {
 		this.setState({[e.target.name]: e.target.value})
 	},
-	handleSubmit(e){
-		e.preventDefault()
-		addReservation(this.state.fullName, this.state.numberOfGuests, this.state.date)
+	handleSubmit(e) {
+		e.preventDefault
+		addUser(this.state.name, this.state.guests, this.state.date, this.state.notes)
 	},
-	render() {
-		return (
-	  	<div>
-	  		<form onSubmit={this.handleSubmit}>
-	  			<input onChange={this.update} type='text' name='fullName' value={this.state.fullName} />
-	  			<input onChange={this.update} type='text' name='numberOfGuests' value={this.state.numberOfGuests} />
-	  			<input onChange={this.update} type='text' name='date' value={this.state.date} />
-	  			<input onChange={this.update} type='text' name='specialNotes' value={this.state.specialNotes} />
-	  			<button type='submit'>Reserve Table</button>
-	  		</form>
-	    </div>
-	  )
+	render(){
+		return(
+			<form onSubmit={this.handleSubmit}>
+				<input onChange={this.update} type='text' name='name' placeholder='Name' value={this.state.name} />
+				<input onChange={this.update} type='text' name='guests' placeholder='Number of People' value={this.state.guests} />
+				<input onChange={this.update} type='text' name='date' placeholder='Date' value={this.state.date} />
+				<input onChange={this.update} type='text' name='notes' placeholder='Special Requests' value={this.state.notes} />
+				<button type='submit'>Reserve Table</button>
+			</form>
+		)
 	}
 })
-
 

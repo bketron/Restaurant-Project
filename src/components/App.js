@@ -1,30 +1,33 @@
 import React from 'react';
-import InfoSection from './infoSection'
-import Reservation from './reservation'
+import TopArea from './brennen/TopArea'
+import FoodImages from './brennen/FoodImages'
+import TabSection from './brennen/TabSection'
+import ShowReservation from './showReservation'
 
-var styles= {
-	ring: {
-        height: '15px',
-        width: '15px',
-        borderRadius: '50%',
-        border: '6px solid black'
-    }
-  }
+var styles = {
+	main: {
+		width: '1000px',
+		margin: 'auto',
+		paddingBottoM: '40px'
+	},
+	lower: {
+		marginTop: '35px',
+		width: '900px'
+	},
+}
 
 export default React.createClass({
   render() {
     return (
-      <div>
-      	<div>
-      		<img src='https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNOMca1saenvD9LVXFoGz0AuGassyvjG1K9SOlPDsbOia4IIXx' alt='#'/>
-      	</div>
-      	<div>
-      		<InfoSection />
-      		<Reservation />
+		    <div style={styles.main}>
+		      	<TopArea />
 
-      	</div>
-      	<footer>&copy; 2017 restaurant name</footer>
-      </div>
+		      	<div id="lowerSection" style={styles.lower}>
+		      		<TabSection />
+		      		<FoodImages />
+		      		<ShowReservation />
+		      	</div>
+		    </div>
     )
   }
 })
