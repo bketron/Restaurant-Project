@@ -50,6 +50,29 @@ var styles = {
 		display: 'flex',
 		justifyContent: 'center',
 		flexDirection: 'column'
+	},
+	arrowCon:{
+
+	},
+	monthArrow: {
+		position: 'relative',
+		left: '290px',
+		top: '-27px'
+	},
+	dayArrow: {
+		position: 'relative',
+		left: '337px',
+		top: '-27px'
+	},
+	hourArrow: {
+		position: 'relative',
+		left: '410px',
+		top: '-27px'
+	},
+	minArrow: {
+		position: 'relative',
+		left: '457px',
+		top: '-27px'
 	}
 }
 
@@ -62,6 +85,13 @@ export default React.createClass({
 				<h1 style={styles.title}>Make a Reservation!</h1>
 
 				<Form />
+				
+				<div style={styles.arrowCon}>
+					<i style={styles.monthArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
+					<i style={styles.dayArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
+					<i style={styles.hourArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
+					<i style={styles.minArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
+				</div>
 			</div>
 		)	
 	}

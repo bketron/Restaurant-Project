@@ -110,5 +110,25 @@ body {
 }
 
 #ourStoryContainer {
-	background-image: url('./assets/design-images/ourstory-image.jpg')
+	background-image: url('./assets/design-images/ourstory-new.jpg')
+}
+
+#newsContainer {
+	background-image: url('./assets/design-images/news-image.jpg');
+}
+
+#grandOpeningPic {
+	background-image: url('./assets/design-images/grand-opening.jpg');
+}
+
+select {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+	border: 0.5px solid rgba(125,125,125,0.3);
+	padding: 0 10px;
+	color: grey;
+}
+
+select::placeholder {
+	color: rgba(125,125,125,0.5);
 }
