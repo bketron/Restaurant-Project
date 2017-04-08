@@ -12,7 +12,7 @@ var styles = {
 	main: {
 		width: '100%',
 		margin: 'auto',
-		paddingBottoM: '40px'
+		backgroundColor: '#e6e6e6'
 	},
 	lower: {
 		marginTop: '35px',
