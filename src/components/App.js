@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from './brennen/Banner'
+import Banner from './Banner'
 import News from './News'
 import OurStory from './OurStory'
 import Menu from './Menu'

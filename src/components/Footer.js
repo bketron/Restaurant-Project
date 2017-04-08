@@ -53,11 +53,6 @@ var styles = {
 		borderRadius: '50%',
 		margin: '5px'
 	},
-	connect: {
-		margin: '10px 0 0 0',
-		fontSize: '20px',
-		textAlign: 'center'
-	}
 }
 
 export default React.createClass({
@@ -66,7 +61,6 @@ export default React.createClass({
 			<div style={styles.container}>
 
 				<div style={styles.main}>
-					<p style={styles.connect}>Check us out!</p>
 
 					<ul style={styles.iconList}>
 						<li style={styles.icons}>
