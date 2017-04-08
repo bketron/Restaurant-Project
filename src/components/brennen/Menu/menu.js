@@ -4,9 +4,12 @@ import ItemIcons from './itemIcons'
 
 var styles = {
 	container: {
-		backgroundColor: 'grey',
-		width: '620px',
-		height: '1340px'
+		backgroundColor: '#f2f2f2',
+		width: '100%',
+		position: 'relative',
+		top: '0px',
+		padding: '75px 300px',
+		boxShadow: 'inset 0px 0px 80px rgba(0,0,0,0.05)'
 	},
 	lists: {
 		listStyleType: 'none',

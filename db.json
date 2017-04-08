@@ -1,14 +1,11 @@
 {
   "users": [
     {
+      "name": "dsafasdf",
+      "guests": "adsfs",
+      "date": "adsff",
+      "notes": "adfafd",
       "id": 1
-    },
-    {
-      "name": "dsafsa",
-      "guests": "dfaf",
-      "date": "adfaf",
-      "notes": "asdfa",
-      "id": 2
     }
   ]
 }

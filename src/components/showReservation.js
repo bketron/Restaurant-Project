@@ -27,7 +27,7 @@ export default React.createClass({
 			<div>
 				<ul>
 					{this.state.users.map(user=>(
-						<li key={'id' + user.id}>{user.name} {user.guests} {user.date} {user.notes}</li>
+						<li key={'id' + user.id}>Thank you {user.name}, your reservation for {user.date} for {user.guests} people is confirmed {user.notes}</li>
 					))}	
 				</ul>
 				<Reservation />

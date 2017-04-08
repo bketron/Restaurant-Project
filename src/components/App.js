@@ -1,11 +1,16 @@
 import React from 'react';
-import TopArea from './brennen/TopArea'
-import FoodImages from './brennen/FoodImages'
-import TabSection from './brennen/TabSection'
+import Banner from './brennen/Banner'
+import News from './News'
+import OurStory from './OurStory'
+import Menu from './Menu'
+import Directions from './Directions'
+import Reservations from './Reservations'
+import Catering from './Catering'
+import Footer from './Footer'
 
 var styles = {
 	main: {
-		width: '1000px',
+		width: '100%',
 		margin: 'auto',
 		paddingBottoM: '40px'
 	},
@@ -19,12 +24,17 @@ export default React.createClass({
   render() {
     return (
 		    <div style={styles.main}>
-		      	<TopArea />
+					<Banner />
+					<img style={styles.mainPic} src={require('../assets/design-images/top-image.jpg')} />
 
-		      	<div id="lowerSection" style={styles.lower}>
-		      		<TabSection />
-		      		<FoodImages />
-		      	</div>
+					<News />
+					<OurStory />
+					<Menu />
+					<Directions />
+					<Reservations />
+					<Catering />
+					<Footer />
+
 		    </div>
     )
   }
