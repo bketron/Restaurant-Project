@@ -8,6 +8,11 @@ body {
   font-family: sans-serif;
 }
 
+#root {
+	width: 100%;
+	margin:0;
+}
+
 #instagramIcon {
 	height: 20px;
 	width:20px;
@@ -89,4 +94,21 @@ body {
 
 #item24price , #item24icons , #item25price , #item25icons , #item28price , #item33price , #item28icons , #item33icons{
 	left: 25px;
+}
+
+#directionsContainer {
+	background-image: url('./assets/Red-map-pic.jpg');
+}
+
+.formInput {
+	margin: 7px;
+	height: 30px;
+}
+
+#cateringContainer {
+	background-image: url('./assets/catering.jpg');
+}
+
+#ourStoryContainer {
+	background-image: url('./assets/design-images/ourstory-image.jpg')
 }

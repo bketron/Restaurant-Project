@@ -1,32 +1,4 @@
 {
   "users": [
-    {
-      "name": "dsafasdf",
-      "guests": "adsfs",
-      "date": "adsff",
-      "notes": "adfafd",
-      "id": 1
-    },
-    {
-      "name": "Brett",
-      "guests": "8",
-      "date": "2017-04-07",
-      "notes": "",
-      "id": 2
-    },
-    {
-      "name": "Brett",
-      "guests": "3",
-      "date": "2017-04-07",
-      "notes": "",
-      "id": 3
-    },
-    {
-      "name": "Brett",
-      "guests": "3",
-      "date": "2017-04-07",
-      "notes": "",
-      "id": 4
-    }
   ]
 }
