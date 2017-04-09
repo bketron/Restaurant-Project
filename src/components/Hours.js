@@ -61,7 +61,6 @@ export default React.createClass({
 	render() {
 		return (
 			<div style={styles.container} id="bisHoursSection">
-				{console.log(this.openClose())}
 				<p style={styles.title}>{this.openClose()}</p>
 				<ul style={styles.list}>
 					<li style={styles.listItem}>

@@ -99,10 +99,6 @@ body {
 	left: 25px;
 }
 
-#directionsContainer {
-	background-image: url('./assets/Blue-map-pic.jpg');
-}
-
 .formInput {
 	margin: 7px;
 	height: 30px;
@@ -237,9 +233,41 @@ select::placeholder {
 	top: 0;
 }
 
+.directionsMap {
+	z-index:3;
 
+	position: relative;
+	top:-1433px;
+}
 
+#directionsParentContainer {
+	position:relative;
+	left: 0px;
 
+	transition:left 0s;
+	transition-delay: 1s;
+}
 
+#directionsContainer {
+	background-image: url('./assets/Blue-map-pic.jpg');
+	z-index:4;
+	height: 400px;
+	width: 100%;
+	position: relative;
+	top: -8px;
+	padding-top: 100px;
+	opacity:1;
 
+	transition: opacity 1s;
+	
+}
+
+.directionsMap {
+	height: 200px;
+	width: 500px;
+	z-index: 4;
+	position: absolute;
+	top: 4060px;
+	margin-left: 470px;
+}
 

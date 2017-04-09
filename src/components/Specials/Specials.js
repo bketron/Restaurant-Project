@@ -1,6 +1,6 @@
 import React from 'react'
 import Specials from './specials.json'
-import Menu from './brennen/Menu/menuitems.json'
+import Menu from '../brennen/Menu/menuitems.json'
 
 var styles = {
 	container: {
@@ -73,16 +73,14 @@ var todaySpecial = Menu.entrees.filter(function(value){
 	return value.id === Specials.menu_item_id
 })[0]
 
-var imageRequirer = require.context('../assets/food-images/special-pics/', true, /^\.\/.*\.(jpg|jpeg|png|gif)$/gmi)
+var imageRequirer = require.context('../../assets/food-images/special-pics/', true, /^\.\/.*\.(jpg|jpeg|png|gif)$/gmi)
 
 
 var specialPic = todaySpecial.image
 
-console.log(todaySpecial)
-
 export default React.createClass({
 	imageFormatter(specialPic) {  
-    return <img src={require('../assets/food-images/special-pics/' + specialPic)} />;
+    return <img src={require('../../assets/food-images/special-pics/' + specialPic)} />;
 	},
 
 	render(){

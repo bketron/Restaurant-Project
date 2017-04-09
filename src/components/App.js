@@ -2,7 +2,7 @@ import React from 'react';
 import ShowReservation from './showReservation'
 import Banner from './Banner'
 import Hours from './Hours'
-import News from './News'
+import News from './News/News'
 import OurStory from './OurStory'
 import Menu from './Menu'
 import Slideshow from './Slideshow/Slideshow'
@@ -10,7 +10,7 @@ import Directions from './Directions'
 import Reservations from './Reservations'
 import Catering from './Catering'
 import Footer from './Footer'
-import Specials from './Specials'
+import Specials from './Specials/Specials'
 
 
 var styles = {
