@@ -4,6 +4,7 @@ import Menu from './brennen/Menu/menuitems.json'
 
 var styles = {
 	container: {
+		display: 'flex',
 		height: '400px'
 	},
 	title: {
@@ -19,7 +20,9 @@ var styles = {
 		textAlign: 'center'
 	},
 	img:{
-		height:'215px'
+		height:'250px',
+		width: '450px',
+		overflow: 'hidden'
 	},
 	name: {
 		fontFamily: 'Italliano, cursive',
