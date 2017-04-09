@@ -38,7 +38,23 @@ var styles = {
 		width: '300px',
 		borderRadius: '50%',
 		marginLeft: '150px',
-		boxShadow: '0 0 60px rgba(0,0,0,0.2)'
+		boxShadow: '0 0 60px rgba(0,0,0,0.2)',
+	},
+	icon: {
+		fontSize: '12px',
+		color: '#02423f',
+		fontWeight: 'lighter'
+	},
+	readmore: {
+		marginLeft: '350px',
+		textAlign: 'center',
+		color: '#02423f',
+		backgroundColor: 'white',
+		textDecoration: 'none',
+		fontSize: '12px',
+		fontWeight: 'lighter',
+		padding: '5px 7px',
+		fontFamily: 'system-ui'
 	}
 }
 
@@ -53,9 +69,14 @@ export default React.createClass({
 						<div id="grandOpeningPic" style={styles.picBox}></div>
 					</div>
 
-					<p style={styles.text}>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi placeat inventore repudiandae ipsa sunt ab accusantium, ex nihil, odio quisquam at. Recusandae perspiciatis aliquid atque veritatis sapiente illo, autem vitae!
-					</p>
+					<div>
+						<p style={styles.text}>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi placeat inventore repudiandae ipsa sunt ab accusantium, ex nihil, odio quisquam at. Recusandae perspiciatis aliquid atque veritatis sapiente illo, autem vitae!
+						</p>
+
+						<a style={styles.readmore} href="">Read More <i className="fa fa-angle-right" aria-hidden="true"></i>
+</a>
+					</div>
 				</div>
 			</div>
 		)

@@ -110,7 +110,7 @@ body {
 }
 
 #ourStoryContainer {
-	background-image: url('./assets/design-images/ourstory-new.jpg')
+	background-image: url('./assets/design-images/ourstory-dark.jpg')
 }
 
 #newsContainer {
@@ -119,6 +119,10 @@ body {
 
 #grandOpeningPic {
 	background-image: url('./assets/design-images/grand-opening.jpg');
+}
+
+#bisHoursSection {
+	background-image: url('./assets/dark-main-pic.jpg');
 }
 
 select {

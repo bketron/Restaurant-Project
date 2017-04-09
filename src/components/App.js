@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './Banner'
+import Hours from './Hours'
 import News from './News'
 import OurStory from './OurStory'
 import Menu from './Menu'
@@ -7,6 +8,7 @@ import Directions from './Directions'
 import Reservations from './Reservations'
 import Catering from './Catering'
 import Footer from './Footer'
+
 
 var styles = {
 	main: {
@@ -25,7 +27,7 @@ export default React.createClass({
     return (
 		    <div style={styles.main}>
 					<Banner />
-					<img style={styles.mainPic} src={require('../assets/dark-main-pic.jpg')} />
+					<Hours />
 
 					<News />
 					<OurStory />
