@@ -1,6 +1,25 @@
 {
   "users": [
+    {
+      "name": "Brett",
+      "guests": "2",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "min": "",
+      "notes": "none",
+      "id": 1
+    },
+    {
+      "name": "",
+      "guests": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "min": "",
+      "notes": "",
+      "id": 2
+    }
   ],
-  "email":[
-  ]
+  "email": []
 }

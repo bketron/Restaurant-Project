@@ -33,13 +33,14 @@ export default React.createClass({
 					<Hours />
 					<News />
 					<OurStory />
+					<Specials />
 					<Menu />
 					<Slideshow />
 					<Directions />
 					<Reservations />
 					<Catering />
 					<Footer />
-					<Specials />
+					
 
 		    </div>
     )

@@ -42,7 +42,7 @@ export default React.createClass({
 			<div style={styles.container}>
 
 				<select name="month" style={styles.month}>
-					<option value="" disabled selected>Month</option>
+					<option value="" selected>Month</option>
 					<option value="january">January</option>
 					<option value="february">February</option>
 					<option value="march">March</option>

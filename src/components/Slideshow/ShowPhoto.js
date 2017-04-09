@@ -23,11 +23,6 @@ export default React.createClass({
 	render() {
 		var imgPath = String(this.props.photos[this.props.index].path)
 
-		{console.log(this.props)}
-		{console.log('.../assets/food-images/' + this.state.photo.path)}
-		{console.log(this.state.photo)}
-		{console.log(this.props.photos[this.props.index].path)}
-		
 		return (
 			<div style={styles.container}>
 				{this.imageFormatter(this.state.photoLink)}
