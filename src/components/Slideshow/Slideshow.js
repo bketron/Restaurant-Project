@@ -1,74 +1,43 @@
 import React from 'react'
-import ShowPhoto from './ShowPhoto'
+import PhotoArray from './PhotoArray'
 
 var photos = require('./slideData.js')
 
 var styles = {
 	container: {
 		width: '1425px',
-		height: '650px',
+		height: '350px',
 		backgroundColor: 'black',
 		overflow: 'hidden',
 		position: 'relative',
-		top: '-8px'
+		top: '-8px',
+		paddingTop: '30px'
 	},
 	title: {
-		position: 'relative',
-		top: '-800px',
 		color: '#66fff9',
-		fontSize: '55px',
+		fontSize: '60px',
 		fontFamily: 'Great Vibes',
-		textAlign: 'center'
+		textAlign: 'center',
+		margin: '60px 0 30px 0'
 	},
-	photoList: {
-		listStyleType: 'none',
+	button: {
 		display: 'flex',
-		padding: 0,
-		margin: 0,
-		width: '1425px',
-		overflow: 'hidden',
-	},
-	image: {
-		maxHeight: '450px'
-	},
-	leftButton: {
-		display: 'none',
-		position: 'relative',
-		top: '-454px',
-		background: 'none',
-		outline: 'none',
+		justifyContent: 'center',
+		backgroundColor: '#66fff9',
+		color: '#366361',
 		border: 'none',
-		height: '450px',
-		width: '100px',
-		backgroundColor: 'rgba(255,255,255,0.2)',
-		padding: '0 20px'
-	},
-	rightButton: {
-		display: 'none',
-		position: 'relative',
-		top: '-454px',
-		left: '1225px',
-		background: 'none',
 		outline: 'none',
-		border: 'none',
-		height: '450px',
-		width: '100px',
-		backgroundColor: 'rgba(255,255,255,0.2)',
-		padding: '0 20px',
-		zIndex: '2'
-
+		height: '36px',
+		fontSize: '13px',
+		lineHeight: '36px',
+		fontFamily: 'Helvetica Neue',
+		margin: 'auto',
+		textAlign: 'center',
+		padding: '0 12px',
+		width: '130px',
+		textDecoration: 'none',
+		position: 'relative'
 	},
-	icon: {
-		fontSize: '30px',
-		color: 'white'
-	},
-	shadow: {
-		width: '1425px',
-		height: '450px',
-		backgroundColor: 'rgba(0,0,0,0.8)',
-		position: 'relative',
-		top: '-454px'
-	}
 }
 
 export default React.createClass({
@@ -79,9 +48,17 @@ export default React.createClass({
 	},
 	render() {
 		return (
-			<div style={styles.container}>
+			<div className="imageGallery" style={styles.container}>
+				<div className="gallery">
 
-				<ShowPhoto index={this.state.slideIndex} photos={photos}/>
+					<div className="galleryData">
+						<div className="titleBox">
+							<p>Gallery</p>
+						</div>
+
+						<PhotoArray />
+					</div>
+				</div>
 			</div>
 		)
 	}

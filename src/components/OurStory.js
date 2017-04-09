@@ -3,7 +3,6 @@ import React from 'react'
 var styles = {
 	container: {
 		height: '450px',
-		width: '100%',
 		position: 'relative',
 		top: '-4px',
 		padding: '50px 300px',
@@ -48,19 +47,23 @@ var styles = {
 export default React.createClass({
 	render() {
 		return (
-			<div id="ourStoryContainer" style={styles.container}>
-				<p style={styles.title}>Our Story</p>
+			<div>
+				<a name="ourStory"></a>
+				<div id="ourStoryContainer" style={styles.container}>
 
-				<div style={styles.textBox} id="ourStoryText">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quis ipsam sed! Laboriosam explicabo veniam, labore deserunt illum officia ad, accusamus ut obcaecati, blanditiis enim autem veritatis minima provident nobis!
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odio maiores quidem, ullam, inventore quas cumque ab natus ratione id, eveniet dolorem! Ab reiciendis libero officiis, consequatur itaque doloribus magnam.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, reprehenderit, qui! Est vero dolorum veniam voluptatem voluptas totam inventore, cumque. Repellat eaque consectetur, repudiandae omnis quae eveniet natus animi nihil.	
-				</div>
+					<p style={styles.title}>Our Story</p>
 
-				<div style={styles.linkCon} id="readMoreLink">
-					<a style={styles.link} href="">Read More <i style={styles.icon} className="fa fa-chevron-right" aria-hidden="true"></i>
+					<div style={styles.textBox} id="ourStoryText">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quis ipsam sed! Laboriosam explicabo veniam, labore deserunt illum officia ad, accusamus ut obcaecati, blanditiis enim autem veritatis minima provident nobis!
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odio maiores quidem, ullam, inventore quas cumque ab natus ratione id, eveniet dolorem! Ab reiciendis libero officiis, consequatur itaque doloribus magnam.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, reprehenderit, qui! Est vero dolorum veniam voluptatem voluptas totam inventore, cumque. Repellat eaque consectetur, repudiandae omnis quae eveniet natus animi nihil.	
+					</div>
 
-</a>
+					<div style={styles.linkCon} id="readMoreLink">
+						<a style={styles.link} href="">Read More <i style={styles.icon} className="fa fa-chevron-right" aria-hidden="true"></i>
+
+	</a>
+					</div>
 				</div>
 			</div>
 		)

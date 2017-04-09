@@ -26,12 +26,15 @@ var styles = {
 export default React.createClass({
 	render() {
 		return (
-			<div style={styles.container}>
-				<div style={styles.headCon}>
-					<p style={styles.header}>Menu</p>
-				</div>
+			<div>
+				<a name='menu'></a>
+				<div style={styles.container}>
+					<div style={styles.headCon}>
+						<p style={styles.header}>Menu</p>
+					</div>
 
-				<Menu />
+					<Menu />
+				</div>
 			</div>
 		)
 	}

@@ -61,17 +61,20 @@ var styles = {
 export default React.createClass({
 	render() {
 		return (
-			<div id="directionsContainer" style={styles.container}>
-				<p style={styles.question}>Need help getting here?</p>
-				<h1 style={styles.header}>Restaurant Location</h1>
+			<div>
+				<a name='directions'></a>
+				<div id="directionsContainer" style={styles.container}>
+					<p style={styles.question}>Need help getting here?</p>
+					<h1 style={styles.header}>Restaurant Location</h1>
 
-				<p style={styles.address}>1112 S Casino Center Blvd, Las Vegas, NV 89104</p>
-				<p style={styles.phoneNum}>(702) 560-6797</p>
+					<p style={styles.address}>1112 S Casino Center Blvd, Las Vegas, NV 89104</p>
+					<p style={styles.phoneNum}>(702) 560-6797</p>
 
-				<div style={styles.buttonCon}>
-					<a style={styles.link} href="https://www.google.com/maps/dir/''/the+iron+yard/@36.1583671,-115.222525,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x80c8c39ab244a1cb:0x1ffc3bc887ac02b9!2m2!1d-115.1524849!2d36.1583875">
-					<button style={styles.button} type="button">Get Directions!</button>
-					</a>
+					<div style={styles.buttonCon}>
+						<a style={styles.link} href="https://www.google.com/maps/dir/''/the+iron+yard/@36.1583671,-115.222525,12z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x80c8c39ab244a1cb:0x1ffc3bc887ac02b9!2m2!1d-115.1524849!2d36.1583875">
+						<button style={styles.button} type="button">Get Directions!</button>
+						</a>
+					</div>
 				</div>
 			</div>
 		)

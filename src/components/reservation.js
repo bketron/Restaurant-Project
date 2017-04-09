@@ -65,17 +65,20 @@ export default React.createClass({
 	},
 	render(){
 		return(
-			<form style={styles.form} onSubmit={this.handleSubmit}>
-				<input style={styles.input} onChange={this.update} type='text' name='name' placeholder='Name' value={this.state.name} />
-				<input style={styles.input} onChange={this.update} type='text' name='guests' placeholder='Number of People (max 12)' value={this.state.guests} />
-				<input style={styles.input} onChange={this.update} type='text' name='notes' placeholder='Special Requests' value={this.state.notes} />
+			<div>
+				<a name='reservations'></a>
+				<form style={styles.form} onSubmit={this.handleSubmit}>
+					<input style={styles.input} onChange={this.update} type='text' name='name' placeholder='Name' value={this.state.name} />
+					<input style={styles.input} onChange={this.update} type='text' name='guests' placeholder='Number of People (max 12)' value={this.state.guests} />
+					<input style={styles.input} onChange={this.update} type='text' name='notes' placeholder='Special Requests' value={this.state.notes} />
 
-				<div style={styles.botLine}>
-					<Date />
-					
-					<button type='submit' style={styles.button} >Confirm Reservation</button>
-				</div>
-			</form>
+					<div style={styles.botLine}>
+						<Date />
+						
+						<button type='submit' style={styles.button} >Confirm Reservation</button>
+					</div>
+				</form>
+			</div>
 		)
 	}
 })

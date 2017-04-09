@@ -17,8 +17,8 @@ var photos = [
 	{
 		slideIndex: 4,
 		title: '',
-		path: "Grilled-Ostrich-Fillet.jpeg", 
-	}
+		path: "ostrich.jpg", 
+	}	
 ]
 
 module.exports = photos
