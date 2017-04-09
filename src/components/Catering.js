@@ -1,4 +1,5 @@
 import React from 'react'
+import {addEmail} from '../api/reservation'
 
 var styles={
 	container: {
@@ -34,7 +35,8 @@ var styles={
 		border: 'none',
 		outline: 'none',
 		height: '35px',
-		fontSize: '13px'
+		fontSize: '13px',
+		width: '170px'
 	},
 	textbox: {
 		height: '35px',
@@ -45,6 +47,23 @@ var styles={
 }
 
 export default React.createClass({
+	getInitialState(){
+		return {
+			email: ''
+		}
+	},
+	update(e) {
+		this.setState({
+			email: e.target.value
+		})
+	},
+	handleSubmit(e) {
+		e.preventDefault()
+		addEmail(this.state.email)
+		this.setState({
+			email:''
+		})
+	},
 	render() {
 		return (
 			<div id="cateringContainer" style={styles.container}>
@@ -52,8 +71,10 @@ export default React.createClass({
 				<h1 style={styles.sorry}>Sorry!</h1>
 				<p style={styles.para}>We do not offer catering at this time, if you are interested in joining our mailing list please click the button below to sign up.</p>
 				<div style={styles.input}>
-					<input style={styles.textbox} type="email" placeholder="Your Email"></input>					
-					<button style={styles.button} type="button">Sign Up</button>
+				<form onSubmit={this.handleSubmit}>
+					<input style={styles.textbox} onChange={this.update} name='email' type="email" placeholder="Your Email" value={this.state.email}></input>					
+					<button style={styles.button} type="submit">Sign Up</button>
+				</form>
 				</div>
 			</div>
 		)

@@ -1,25 +1,25 @@
 {
   "users": [
     {
-      "name": "dsafasdf",
-      "guests": "adsfs",
-      "date": "adsff",
-      "notes": "adfafd",
+      "name": "Brett",
+      "guests": "2",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "min": "",
+      "notes": "none",
       "id": 1
     },
     {
-      "name": "sdfe",
-      "guests": "sfe",
-      "date": "sdfe",
-      "notes": "sfef",
+      "name": "",
+      "guests": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "min": "",
+      "notes": "",
       "id": 2
-    },
-    {
-      "name": "lkjsfe",
-      "guests": "sdfelkjwef",
-      "date": "",
-      "notes": "sdfwefwe",
-      "id": 3
     }
-  ]
+  ],
+  "email": []
 }

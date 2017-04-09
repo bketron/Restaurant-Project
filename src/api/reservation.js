@@ -10,9 +10,26 @@ export function getUsers() {
 	})
 }
 
-export function addUser(name, guests, date, notes){
+export function addUser(name, guests, month, day, hour, min, notes){
 	axios.post('http://localhost:3001/users', {
-		name, guests, date, notes
+		name, guests, month, day, hour, min, notes
+	}).then(res=>{
+		getUsers()
+	})
+}
+
+export function getEmail() {
+	axios.get('http://localhost:3001/email').then(res=>{
+		store.dispatch({
+			type: 'GET_EMAIL',
+			users: res.data
+		})
+	})
+}
+
+export function addEmail(email){
+	axios.post('http://localhost:3001/email', {
+		email
 	}).then(res=>{
 		getUsers()
 	})

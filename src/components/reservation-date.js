@@ -41,8 +41,8 @@ export default React.createClass({
 		return (
 			<div style={styles.container}>
 
-				<select style={styles.month}>
-					<option value="" disabled selected>Month</option>
+				<select name="month" style={styles.month}>
+					<option value="" selected>Month</option>
 					<option value="january">January</option>
 					<option value="february">February</option>
 					<option value="march">March</option>
@@ -57,7 +57,7 @@ export default React.createClass({
 					<option value="december">December</option>
 				</select>
 
-				<select style={styles.day}>
+				<select name="day" style={styles.day}>
 					<option value="" disabled selected>Day</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -92,7 +92,7 @@ export default React.createClass({
 					<option value="31">31</option>
 				</select>
 
-				<select style={styles.hour}>
+				<select name="hour" style={styles.hour}>
 					<option value="" disabled selected>Hour</option>
 					<option value="11am">11 am</option>
 					<option value="12pm">12 pm</option>
@@ -107,7 +107,7 @@ export default React.createClass({
 					<option value="9pm">9 pm</option>
 				</select>
 
-				<select style={styles.min}>
+				<select name="min" style={styles.min}>
 					<option value="" disabled selected>Min.</option>
 					<option value="00">0</option>
 					<option value="15">15</option>

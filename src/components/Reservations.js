@@ -81,6 +81,33 @@ var styles = {
 }
 
 export default React.createClass({
+	getInitialState(){
+		return {
+			name: '',
+			guests: '',
+			month: '',
+			day: '',
+			hour: '',
+			min: '',
+			notes: ''
+		}
+	},
+	update(e) {
+		this.setState({[e.target.name]: e.target.value})
+	},
+	handleSubmit(e) {
+		e.preventDefault()
+		addUser(this.state.name, this.state.guests, this.state.month, this.state.day, this.state.hour, this.state.min, this.state.notes)
+		this.setState({
+			name: '',
+			guests: '',
+			month: '',
+			day: '',
+			hour: '',
+			min: '',
+			notes: ''
+		})
+	},
 	render() {
 		return (
 			<div style={styles.container}>
@@ -92,7 +119,7 @@ export default React.createClass({
 				
 				<div style={styles.arrowCon}>
 					<i style={styles.monthArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
-					<i style={styles.dayArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
+					<i style={styles.dayArrow}  className="fa fa-angle-double-down" aria-hidden="true"></i>
 					<i style={styles.hourArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
 					<i style={styles.minArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
 				</div>

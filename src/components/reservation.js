@@ -40,7 +40,10 @@ export default React.createClass({
 		return {
 			name: '',
 			guests: '',
-			date: '',
+			month: '',
+			day: '',
+			hour: '',
+			min: '',
 			notes: ''
 		}
 	},
@@ -48,8 +51,17 @@ export default React.createClass({
 		this.setState({[e.target.name]: e.target.value})
 	},
 	handleSubmit(e) {
-		e.preventDefault
-		addUser(this.state.name, this.state.guests, this.state.date, this.state.notes)
+		e.preventDefault()
+		addUser(this.state.name, this.state.guests, this.state.month, this.state.day, this.state.hour, this.state.min, this.state.notes)
+		this.setState({
+			name: '',
+			guests: '',
+			month: '',
+			day: '',
+			hour: '',
+			min: '',
+			notes: ''
+		})
 	},
 	render(){
 		return(
@@ -60,6 +72,7 @@ export default React.createClass({
 
 				<div style={styles.botLine}>
 					<Date />
+					
 					<button type='submit' style={styles.button} >Confirm Reservation</button>
 				</div>
 			</form>
