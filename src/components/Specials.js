@@ -12,7 +12,7 @@ export default React.createClass({
 		return(
 			<div>
 				<h3>Today's Special</h3>
-				<img src={require(todaySpecial.image)} alt="special" />
+				<img src={require("../assets/food-images/scallops.jpg")} alt="special" />
 				<div>{todaySpecial.item}...........{todaySpecial.price}</div>
 				<div>{todaySpecial.description}</div>
 			</div>

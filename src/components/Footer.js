@@ -54,6 +54,13 @@ var styles = {
 		borderRadius: '50%',
 		margin: '5px'
 	},
+	footerText: {
+		color: 'rgba(0,0,0,0.2)',
+		textAlign: 'center',
+		padding: '0 350px',
+		fontSize: '11px',
+		marginTop: '25px'
+	}
 }
 
 export default React.createClass({
@@ -65,22 +72,34 @@ export default React.createClass({
 
 					<ul style={styles.iconList}>
 						<li style={styles.icons}>
-							<i style={styles.facebook} className="fa fa-facebook" aria-hidden="true"></i>
+							<a href="#" alt="Our Facebook page">
+								<i style={styles.facebook} className="fa fa-facebook" aria-hidden="true"></i>
+							</a>
 						</li>
 
 						<li style={styles.icons}>
-							<i style={styles.twitter} className="fa fa-twitter" aria-hidden="true"></i>
+							<a href="#" alt="Our Twitter page">
+								<i style={styles.twitter} className="fa fa-twitter" aria-hidden="true"></i>
+							</a>
 						</li>
 
 						<li style={styles.icons}>
-							<img style={styles.instagram} id="instagramIcon" src={require('../assets/icon-images/instagram.png')} alt="#"/>
+							<a href="#">
+								<img style={styles.instagram} id="instagramIcon" src={require('../assets/icon-images/instagram.png')} alt="Our Instagram"/>
+							</a>
 						</li>
 
 						<li style={styles.icons}>
-							<img  style={styles.openTable} id="openTableIcon" src={require('../assets/icon-images/opentable.png')} alt="#"/>
+							<a href="#" alt="Our Open Table page">
+								<img  style={styles.openTable} id="openTableIcon" src={require('../assets/icon-images/opentable.png')} alt="Our Open Table page"/>
+							</a>
 						</li>
 						
 					</ul>
+
+					<p style={styles.footerText}>
+						Restaurant © 2016 | Website by Brett & Brennen @ TheIronYard | All to-go items will reflect a service charge for packaging materials | An 18% gratuity will be added to any party of 8 or more
+					</p>
 				</div>
 
 			</div>

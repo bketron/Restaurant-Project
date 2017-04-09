@@ -50,7 +50,8 @@
       "allergies": 0,
       "favorite": 1,
       "spicy": 0,
-      "vegan": 0
+      "vegan": 0,
+      "image":"../assets/food-images/porkchop.jpg"
     },
     {
       "id": 25,
@@ -61,7 +62,8 @@
       "favorite": 0,
       "spicy": 0,
       "vegan": 0,
-      "image": "../assets/food-images/Grilled-Ostrich-Fillet.jpeg"
+      "image":"../assets/food-images/scallops.jpg"
+      
     },
     {
       "id": 28,
@@ -71,7 +73,8 @@
       "allergies": 0,
       "favorite": 1,
       "spicy": 0,
-      "vegan": 0
+      "vegan": 0,
+      "image": "../assets/food-images/Grilled-Ostrich-Fillet.jpeg"
     },
     {
       "id": 33,
@@ -81,7 +84,8 @@
       "allergies": 0,
       "favorite": 1,
       "spicy": 0,
-      "vegan": 0
+      "vegan": 0,
+      "image":"../assets/food-images/Ribeye.jpg"
     }
   ],
   "sides": [

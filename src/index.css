@@ -97,7 +97,7 @@ body {
 }
 
 #directionsContainer {
-	background-image: url('./assets/Red-map-pic.jpg');
+	background-image: url('./assets/Blue-map-pic.jpg');
 }
 
 .formInput {
@@ -110,5 +110,68 @@ body {
 }
 
 #ourStoryContainer {
-	background-image: url('./assets/design-images/ourstory-image.jpg')
+	background-image: url('./assets/design-images/ourstory-dark.jpg')
+}
+
+#newsContainer {
+	background-image: url('./assets/design-images/news-image-blue.jpg');
+}
+
+#grandOpeningPic {
+	background-image: url('./assets/design-images/grandopening-new.jpg');
+}
+
+#bisHoursSection {
+	background-image: url('./assets/dark-main-pic.jpg');
+}
+
+select {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0px;
+	border: 0.5px solid rgba(125,125,125,0.3);
+	padding: 0 10px;
+	color: grey;
+}
+
+select::placeholder {
+	color: rgba(125,125,125,0.5);
+}
+
+.bannerLink a:hover {
+	border-bottom: 3px solid #59E4DF;
+}
+
+#readMoreLink a:hover {
+	border-bottom: 3px solid #59E4DF;
+}
+
+#ourStoryText {
+	display: block;
+	display: -webkit-box;
+	max-width:800px;
+	height: 150px;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+}
+
+#newsTextBox {
+	display: block;
+	display: -webkit-box;
+	max-width: 500px;
+	height: 210px;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 30px;
+	margin-left: 175px;
+	text-align: center;
+	color: white;
+	font-size:17px;
+	line-height: 30px;
 }

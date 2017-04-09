@@ -14,20 +14,34 @@ var styles = {
 		height: '400px',
 	},
 	title: {
-		color: 'red',
-		fontSize: '50px',
-		fontWeight: 'bold',
-		textAlign: 'center',
-		margin: 0
-	},
-	text: {
-		marginTop: '80px',
-		fontSize: '18px',
-		textAlign: 'center',
-		lineHeight: '30px',
-		borderBottom: '1px solid black',
 		color: 'white',
-		textShadow: '1px 1px rgba(0,0,0,0.4)'
+		fontSize: '60px',
+		textAlign: 'center',
+		margin: 0,
+		fontFamily: 'Great Vibes'
+	},
+	textBox: {
+		fontSize: '17px',
+		color: 'white',
+		textAlign: 'center',
+		fontFamily: 'Helvetica Neue',
+		lineHeight: '30px'
+	},
+	link: {
+		textDecoration: 'none',
+		height: '35px',
+		fontSize: '17px',
+		color: 'white',
+		textAlign: 'center'
+	},
+	linkCon: {
+		height: '30px',
+		width: '120px',
+		margin: 'auto'
+	},
+	icon: {
+		fontSize: '14px',
+		color: '#59E4DF'
 	}
 }
 
@@ -37,11 +51,17 @@ export default React.createClass({
 			<div id="ourStoryContainer" style={styles.container}>
 				<p style={styles.title}>Our Story</p>
 
-				<p style={styles.text}>
+				<div style={styles.textBox} id="ourStoryText">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quis ipsam sed! Laboriosam explicabo veniam, labore deserunt illum officia ad, accusamus ut obcaecati, blanditiis enim autem veritatis minima provident nobis!
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odio maiores quidem, ullam, inventore quas cumque ab natus ratione id, eveniet dolorem! Ab reiciendis libero officiis, consequatur itaque doloribus magnam.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, reprehenderit, qui! Est vero dolorum veniam voluptatem voluptas totam inventore, cumque. Repellat eaque consectetur, repudiandae omnis quae eveniet natus animi nihil.
-				</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, reprehenderit, qui! Est vero dolorum veniam voluptatem voluptas totam inventore, cumque. Repellat eaque consectetur, repudiandae omnis quae eveniet natus animi nihil.	
+				</div>
+
+				<div style={styles.linkCon} id="readMoreLink">
+					<a style={styles.link} href="">Read More <i style={styles.icon} className="fa fa-chevron-right" aria-hidden="true"></i>
+
+</a>
+				</div>
 			</div>
 		)
 	}
