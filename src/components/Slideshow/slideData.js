@@ -7,17 +7,17 @@ var photos = [
 	{
 		slideIndex: 2,
 		title: '',
-		path: '~scallops.jpg', 
+		path: "scallops.jpg", 
 	},
 	{
 		slideIndex: 3,
 		title: '',
-		path: '~porkchop.jpg', 
+		path: "porkchop.jpg", 
 	},
 	{
 		slideIndex: 4,
 		title: '',
-		path: '~Grilled-Ostrich-Fillet.jpeg', 
+		path: "Grilled-Ostrich-Fillet.jpeg", 
 	}
 ]
 
