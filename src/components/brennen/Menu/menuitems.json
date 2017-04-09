@@ -60,7 +60,8 @@
       "allergies": 1,
       "favorite": 0,
       "spicy": 0,
-      "vegan": 0
+      "vegan": 0,
+      "image": "../assets/food-images/Grilled-Ostrich-Fillet.jpeg"
     },
     {
       "id": 28,

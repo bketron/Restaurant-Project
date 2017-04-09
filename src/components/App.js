@@ -8,12 +8,13 @@ import Directions from './Directions'
 import Reservations from './Reservations'
 import Catering from './Catering'
 import Footer from './Footer'
+import Specials from './Specials'
 
 var styles = {
 	main: {
 		width: '100%',
 		margin: 'auto',
-		paddingBottoM: '40px'
+		backgroundColor: '#e6e6e6'
 	},
 	lower: {
 		marginTop: '35px',
@@ -35,6 +36,7 @@ export default React.createClass({
 					<Reservations />
 					<Catering />
 					<Footer />
+					<Specials />
 
 		    </div>
     )

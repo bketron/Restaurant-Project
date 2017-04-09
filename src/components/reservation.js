@@ -16,6 +16,12 @@ export default React.createClass({
 	handleSubmit(e) {
 		e.preventDefault()
 		addUser(this.state.name, this.state.guests, this.state.date, this.state.notes)
+		this.setState({
+			name: '',
+			guests: '',
+			date: '',
+			notes: ''
+		})
 	},
 	render(){
 		return(

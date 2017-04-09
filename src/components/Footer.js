@@ -3,14 +3,14 @@ import React from 'react'
 var styles = {
 	container: {
 		height: '125px',
-		backgroundColor: 'red',
+		backgroundColor: '#e6e6e6',
 		color: 'white',
 		position: 'relative',
 		top: '-9px',
 		padding: '15px 0'
 	},
 	main: {
-		borderTop: '1px solid rgba(0,0,0,0.6)'
+		borderTop: '1px solid rgba(0,0,0,0.1)'
 	},
 	iconList: {
 		listStyleType: 'none',
@@ -23,21 +23,21 @@ var styles = {
 		color: 'white',
 		position: 'relative',
 		top: '4px',
-		left: '7px'
+		left: '8px'
 	},
 	twitter: {
 		fontSize: '15px',
 		color: 'white',
 		position: 'relative',
 		top: '4px',
-		left: '5px'
+		left: '7px'
 	},
 	instagram: {
 		height: '12px',
 		width: '12px',
 		position: 'relative',
 		top: '4px',
-		left: '6px'
+		left: '7px'
 	},
 	openTable: {
 		height: '15px',
@@ -49,7 +49,8 @@ var styles = {
 	icons: {
 		height: '25px',
 		width: '25px',
-		backgroundColor: 'grey',
+		backgroundColor: 'rgba(125,125,125,0.1)',
+		boxShadow: '0 1px 1px 1px rgba(0,0,0,0.2)',
 		borderRadius: '50%',
 		margin: '5px'
 	},

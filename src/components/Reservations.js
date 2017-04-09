@@ -1,5 +1,6 @@
 import React from 'react'
 import {addUser} from '../api/reservation'
+import Form from './reservation'
 
 var styles = {
 	container: {
@@ -81,17 +82,7 @@ export default React.createClass({
 				<p style={styles.question}>Like what you see?</p>
 				<h1 style={styles.title}>Make a Reservation!</h1>
 
-				<div style={styles.formCon}>
-					<button style={styles.button}type="button">Reserve a Table</button>
-
-					<form style={styles.form} onSubmit={this.handleSubmit}>
-						<input style={styles.name} className="formInput" onChange={this.update} type='text' name='name' placeholder='Name' value={this.state.name} />
-						<input style={styles.numGuests} className="formInput" onChange={this.update} type='text' name='guests' placeholder='Number of People' value={this.state.guests} />
-						<input style={styles.date} className="formInput" onChange={this.update} type='text' name='date' placeholder='Date' value={this.state.date} />
-						<input style={styles.requests} className="formInput" onChange={this.update} type='text' name='notes' placeholder='Special Requests' value={this.state.notes} />
-						<button style={styles.submit} type='submit'>Submit Reservation!</button>
-					</form>
-				</div>
+				<Form />
 			</div>
 		)	
 	}
