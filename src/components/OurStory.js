@@ -49,6 +49,7 @@ export default React.createClass({
 		return (
 			<div>
 				<a name="ourStory"></a>
+				
 				<div id="ourStoryContainer" style={styles.container}>
 
 					<p style={styles.title}>Our Story</p>
