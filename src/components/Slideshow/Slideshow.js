@@ -1,9 +1,12 @@
 import React from 'react'
+import ShowPhoto from './ShowPhoto'
+
+var photos = require('./slideData.js')
 
 var styles = {
 	container: {
 		width: '1425px',
-		height: '450px',
+		height: '650px',
 		backgroundColor: 'black',
 		overflow: 'hidden',
 		position: 'relative',
@@ -69,35 +72,16 @@ var styles = {
 }
 
 export default React.createClass({
+	getInitialState() {
+		return {
+			slideIndex: 0,
+		}
+	},
 	render() {
 		return (
 			<div style={styles.container}>
-				<ul style={styles.photoList}>
-					<li>
-						<img style={styles.image} src={require('../../assets/food-images/Ribeye.jpg')} />
-					</li>
 
-					<li>
-						<img style={styles.image} src={require('../../assets/food-images/scallops.jpg')} />
-					</li>
-
-					<li>
-						<img style={styles.image} src={require('../../assets/food-images/porkchop.jpg')} />
-					</li>
-
-					<li>
-						<img style={styles.image} src={require('../../assets/food-images/Grilled-Ostrich-Fillet.jpeg')} />
-					</li>
-				</ul>
-
-				<button style={styles.leftButton}type="button"><i style={styles.icon} className="fa fa-chevron-left" aria-hidden="true"></i></button>
-				<button style={styles.rightButton}type="button"><i style={styles.icon} className="fa fa-chevron-right" aria-hidden="true"></i></button>
-
-				<div style={styles.shadow}></div>
-
-				<div>
-					<p style={styles.title}>Photos</p>
-				</div>
+				<ShowPhoto index={this.state.slideIndex} photos={photos}/>
 			</div>
 		)
 	}

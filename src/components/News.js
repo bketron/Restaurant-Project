@@ -11,7 +11,7 @@ var styles = {
 	heading: {
 		margin: 0,
 		color: 'white',
-		fontSize: '50px',
+		fontSize: '55px',
 		textAlign: 'center',
 		fontFamily: 'Great Vibes',
 		marginBottom: '30px',
@@ -57,7 +57,7 @@ var styles = {
 		textDecoration: 'none',
 		fontSize: '12px',
 		fontWeight: 'lighter',
-		padding: '5px 7px',
+		padding: '7px 15px',
 		fontFamily: 'system-ui'
 	}
 }
@@ -74,9 +74,13 @@ export default React.createClass({
 					</div>
 
 					<div>
-						<p style={styles.text}>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi placeat inventore repudiandae ipsa sunt ab accusantium, ex nihil, odio quisquam at. Recusandae perspiciatis aliquid atque veritatis sapiente illo, autem vitae!
-						</p>
+						<div id="newsTextBox">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem deleniti eos ad corporis, ullam sint minus! Natus ipsa, praesentium minus voluptates incidunt adipisci quaerat cupiditate expedita ex nesciunt ratione architecto!
+							Dolorem esse, eius neque adipisci nesciunt quo reprehenderit nihil facere cumque maiores libero dolor, numquam, itaque iusto quibusdam? Vel, suscipit reprehenderit alias perspiciatis molestiae dignissimos assumenda qui officia non nam!
+							Expedita repellat esse ea, soluta culpa voluptatum vero voluptates architecto facilis nam inventore molestiae itaque, et dignissimos laborum autem rerum saepe! Quasi fugit dolore, inventore unde at dolorem iure consequuntur.
+							Voluptatum possimus nam impedit autem ipsa architecto commodi quibusdam corrupti sapiente provident maiores, cum velit veniam quae dolorum nihil sed nisi odio aut numquam. Ratione, dolore sint. Nesciunt, pariatur, laudantium.
+							Debitis tempore aut sint dolorum tenetur necessitatibus perferendis et ipsum, accusamus voluptate fugiat quos suscipit placeat veniam soluta harum sed odit ipsam, officiis saepe. Quos praesentium minima excepturi rem nisi.
+						</div>	
 
 						<a style={styles.readmore} href="">Read More <i className="fa fa-angle-right" aria-hidden="true"></i>
 </a>
