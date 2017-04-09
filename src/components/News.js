@@ -14,14 +14,15 @@ var styles = {
 		fontSize: '50px',
 		textAlign: 'center',
 		fontFamily: 'Great Vibes',
-		marginBottom: '30px'
+		marginBottom: '30px',
+		marginTop: '20px'
 	},
 	infoSection: {
 		display: 'flex'
 	},
 	picBox: {
-		width: '300px',
-		height: '300px',
+		width: '350px',
+		height: '350px',
 		borderRadius: '50%',
 		border: '10px solid #f0f0f0',
 		boxShadow: 'inset 0 0 50px 10px rgba(0,0,0,0.3)'
@@ -30,15 +31,18 @@ var styles = {
 		width: '600px',
 		color: 'white',
 		marginLeft: '130px',
-		fontSize: '17px',
+		fontSize: '18px',
 		marginTop: '20px',
+		textAlign: 'center'
 	},
 	dropShadow: {
-		height: '300px',
-		width: '300px',
+		height: '350px',
+		width: '350px',
 		borderRadius: '50%',
 		marginLeft: '150px',
 		boxShadow: '0 0 60px rgba(0,0,0,0.2)',
+		position: 'relative',
+		top: '-70px'
 	},
 	icon: {
 		fontSize: '12px',
@@ -46,7 +50,7 @@ var styles = {
 		fontWeight: 'lighter'
 	},
 	readmore: {
-		marginLeft: '350px',
+		marginLeft: '390px',
 		textAlign: 'center',
 		color: '#02423f',
 		backgroundColor: 'white',

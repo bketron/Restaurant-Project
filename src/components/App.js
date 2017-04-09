@@ -4,6 +4,7 @@ import Hours from './Hours'
 import News from './News'
 import OurStory from './OurStory'
 import Menu from './Menu'
+import Slideshow from './Slideshow/Slideshow'
 import Directions from './Directions'
 import Reservations from './Reservations'
 import Catering from './Catering'
@@ -28,10 +29,10 @@ export default React.createClass({
 		    <div style={styles.main}>
 					<Banner />
 					<Hours />
-
 					<News />
 					<OurStory />
 					<Menu />
+					<Slideshow />
 					<Directions />
 					<Reservations />
 					<Catering />
