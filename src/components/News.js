@@ -11,9 +11,9 @@ var styles = {
 	heading: {
 		margin: 0,
 		color: 'white',
-		fontWeight: 'bold',
-		fontSize: '40px',
+		fontSize: '50px',
 		textAlign: 'center',
+		fontFamily: 'Great Vibes',
 		marginBottom: '30px'
 	},
 	infoSection: {
@@ -27,11 +27,11 @@ var styles = {
 		boxShadow: 'inset 0 0 50px 10px rgba(0,0,0,0.3)'
 	},
 	text: {
-		width: '700px',
+		width: '600px',
 		color: 'white',
-		marginLeft: '60px',
+		marginLeft: '130px',
 		fontSize: '17px',
-		marginTop: '0'
+		marginTop: '20px',
 	},
 	dropShadow: {
 		height: '300px',

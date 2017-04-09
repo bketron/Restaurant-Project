@@ -16,16 +16,18 @@ var styles = {
 	},
 	button: {
 		height: '30px',
-		backgroundColor: 'red',
+		backgroundColor: '#59E4DF',
 		border: 'none',
 		outline: 'none',
 		margin: '5px',
-		color: 'white',
-		fontWeight: 'bold',
+		color: '#366361',
+		fontWeight: 'normal',
+		fontFamily: 'Helvetica Neue',
 		fontSize: '13px',
 		width: '150px',
 		textAlign: 'center',
-		margin: 'auto'
+		margin: 'auto',
+		cursor: 'pointer'
 	},
 	botLine: {
 		display: 'flex',

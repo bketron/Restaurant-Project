@@ -1,0 +1,32 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Italianno';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Italianno'), local('Italianno-Regular'), url(https://fonts.gstatic.com/s/italianno/v6/r8-H81S5And8WyrrbOrbE4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Italianno';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Italianno'), local('Italianno-Regular'), url(https://fonts.gstatic.com/s/italianno/v6/RzzA8gdr3WCK_nxdg53KGpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Pinyon Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pinyon Script'), local('PinyonScript'), url(https://fonts.gstatic.com/s/pinyonscript/v6/TzghnhfCn7TuE73f-CBQ0DLKmjGCnkmx1ziy0T7wKLI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Tangerine'), url(https://fonts.gstatic.com/s/tangerine/v7/HGfsyCL5WASpHOFnouG-RJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}

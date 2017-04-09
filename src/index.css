@@ -97,7 +97,7 @@ body {
 }
 
 #directionsContainer {
-	background-image: url('./assets/Red-map-pic.jpg');
+	background-image: url('./assets/Blue-map-pic.jpg');
 }
 
 .formInput {
@@ -114,7 +114,7 @@ body {
 }
 
 #newsContainer {
-	background-image: url('./assets/design-images/news-image.jpg');
+	background-image: url('./assets/design-images/news-image-blue.jpg');
 }
 
 #grandOpeningPic {
@@ -131,4 +131,12 @@ select {
 
 select::placeholder {
 	color: rgba(125,125,125,0.5);
+}
+
+.bannerLink a:hover {
+	border-bottom: 3px solid #59E4DF;
+}
+
+#readMoreLink a:hover {
+	border-bottom: 3px solid #59E4DF;
 }

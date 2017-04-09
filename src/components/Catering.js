@@ -27,9 +27,10 @@ var styles={
 		marginTop: '35px'
 	},
 	button: {
-		backgroundColor: 'red',
-		color: 'white',
-		fontWeight: 'bold',
+		backgroundColor: '#59E4DF',
+		color: '#366361',
+		fontWeight: 'normal',
+		fontFamily: 'Helvetica Neue',
 		border: 'none',
 		outline: 'none',
 		height: '35px',

@@ -16,13 +16,17 @@ var styles = {
 		margin: 0
 	},
 	title: {
-		textAlign: 'center'
+		textAlign: 'center',
+		fontFamily: 'Great Vibes',
+		fontWeight: 'normal',
+		fontSize: '50px',
+		marginTop: '15px'
 	},
 	button: {
 		height: '40px',
 		padding: '0 15px',
-		backgroundColor: 'red',
-		color: 'white',
+		backgroundColor: '#59E4DF',
+		color: 'black',
 		fontSize: '16px',
 		fontWeight: 'bold',
 		border: 'none',

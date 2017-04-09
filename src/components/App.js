@@ -25,7 +25,7 @@ export default React.createClass({
     return (
 		    <div style={styles.main}>
 					<Banner />
-					<img style={styles.mainPic} src={require('../assets/design-images/top-image.jpg')} />
+					<img style={styles.mainPic} src={require('../assets/dark-main-pic.jpg')} />
 
 					<News />
 					<OurStory />

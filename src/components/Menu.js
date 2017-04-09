@@ -11,7 +11,8 @@ var styles = {
 		borderBottom: '2px solid rgba(0,0,0,0.05)',
 	},
 	header: {
-		fontSize: '40px',
+		fontSize: '50px',
+		fontFamily: 'Great Vibes',
 		color: 'black',
 		textAlign: 'center',
 		height: '120px',
