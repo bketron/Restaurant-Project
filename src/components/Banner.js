@@ -87,7 +87,7 @@ export default React.createClass({
 					</li>
 				</ul>
 
-					<p style={styles.titleCap}>Our</p>
+					<p style={styles.titleCap}>The</p>
 				<div style={styles.titleBox}>
 					<p style={styles.title}>Restaurant</p>
 				</div>
