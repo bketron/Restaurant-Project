@@ -60,6 +60,14 @@ var styles = {
 		fontWeight: 'lighter',
 		padding: '7px 15px',
 		fontFamily: 'system-ui'
+	},
+	newsHeading: {
+		display: 'flex',
+		marginLeft: '11px',
+		marginBottom: '25px'
+	},
+	date: {
+		marginLeft: '200px'
 	}
 }
 
@@ -78,8 +86,13 @@ export default React.createClass({
 
 						<div>
 							<div id="newsTextBox">
-							<div>
-								{News.title} {News.date_published}
+							<div style={styles.newsHeading}>
+								<div>
+									{News.title} 
+								</div>
+								<div style={styles.date}>
+									{News.date_published}
+								</div>
 							</div>
 								{News.post}
 							</div>	
