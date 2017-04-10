@@ -1,0 +1,14 @@
+html{
+	box-sizing:border-box;
+	-webkit-font-smoothing: antialiased;
+}
+*, *:before, *:after {box-sizing: inherit;}
+
+#allergyIcon:hover .iconInfo{
+	display: block;
+
+}
+
+.iconInfo{
+	display: none;
+}

@@ -28,7 +28,14 @@ export default React.createClass({
 		if(this.props.vegan === 1){
 			return (
 				<div>
-					<a href="#" style={styles.link}><p style={styles.icon}>V</p></a>
+					<div className="veganIcon">
+						V
+					</div>
+				
+					
+					<div className='veganInfo'>
+						This item contains no meat and has been prepared without the use of animal products.
+					</div>
 				</div>
 			)
 		} else {

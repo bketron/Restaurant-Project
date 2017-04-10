@@ -1,6 +1,6 @@
 import React from 'react'
 import menu from './menuitems.json'
-import ItemIcons from './itemIcons'
+import Icons from './itemIcons'
 
 var styles = {
 	container: {
@@ -80,6 +80,16 @@ var styles = {
 	description: {
 		width: '600px',
 
+	},
+	iconSection: {
+		alignItems: 'flex-end'
+	},
+	infoContainer: {
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'space-between',
+		height: '120px',
+		marginBottom: '10px'
 	}
 }
 
@@ -103,9 +113,11 @@ export default React.createClass({
 											<p style={styles.itemPrice}>{item.price}</p>
 										</div>
 
-										<div style={styles.itemInformation}>
-											<p style={styles.description}>{item.description}</p>
-										</div>
+											<div style={styles.itemInformation}>
+												<p style={styles.description}>{item.description}</p>
+											</div>
+
+											<Icons item={item}/>
 									</div>
 								</div>
 							</li>
@@ -129,8 +141,12 @@ export default React.createClass({
 											<p style={styles.itemPrice}>{item.price}</p>
 										</div>
 
-										<div style={styles.itemInformation}>
-											<p style={styles.description}>{item.description}</p>
+										<div style={styles.infoContainer}>
+											<div style={styles.itemInformation}>
+												<p style={styles.description}>{item.description}</p>
+											</div>
+
+											<Icons item={item}/>
 										</div>
 									</div>
 								</div>
