@@ -38,6 +38,15 @@ var styles = {
 		justifyContent: 'center',
 		borderBottom: '2px solid rgba(125,125,125,0.1)'
 	},
+	sideLists: {
+		padding: 0,
+		marginBottom: '100px'
+	},
+	sideListItem: {
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+	},
 	itemContainer: {
 		display: 'flex',
 		padding: '20px 10px'
@@ -45,7 +54,7 @@ var styles = {
 	sideItemContainer: {
 		display: 'flex',
 		justifyContent: 'center',
-		padding: '20px 10px'
+		padding: '5px 10px'
 	},
 	itemHeader: {
 		display: 'flex',
@@ -158,9 +167,9 @@ export default React.createClass({
 				<div id="sides">
 					<p style={styles.header}>Sides</p>
 
-					<ul style={styles.lists}>
+					<ul style={styles.sideLists}>
 						{menu.sides.map(item=> (
-							<li key={'id' + item.id} style={styles.listItem}>
+							<li key={'id' + item.id} style={styles.sideListItem}>
 								<div style={styles.sideItemContainer}>
 
 									<div>
