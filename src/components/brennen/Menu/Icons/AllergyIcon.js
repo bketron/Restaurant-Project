@@ -12,8 +12,8 @@ var styles = {
 		margin: '0 3px',
 		borderRadius: '3px'
 	},
-	link: {
-		height: '15px'
+	empty: {
+		display: 'none'
 	}
 } 
 
@@ -25,12 +25,13 @@ export default React.createClass({
 		if(this.props.allergies === 1){
 			return (
 				<div>
-					<a style={styles.link} href="#"><i style={styles.icon} className="fa fa-exclamation" aria-hidden="true"></i></a>
+					<i style={styles.icon} className="fa fa-exclamation" aria-hidden="true"></i>
+					
 				</div>
 			)
 		} else {
 			return (
-				<p></p>
+				<div style={styles.empty}></div>
 			)
 		}
 	}

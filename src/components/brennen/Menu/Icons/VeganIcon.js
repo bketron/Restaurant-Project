@@ -14,6 +14,9 @@ var styles = {
 	},
 	link: {
 		textDecoration: 'none'
+	},
+	empty: {
+		display: 'none'
 	}
 } 
 
@@ -30,7 +33,7 @@ export default React.createClass({
 			)
 		} else {
 			return (
-				<p></p>
+				<div style={styles.empty}></div>
 			)
 		}
 	}

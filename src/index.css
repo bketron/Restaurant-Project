@@ -267,7 +267,60 @@ select::placeholder {
 	width: 500px;
 	z-index: 4;
 	position: absolute;
-	top: 4060px;
+	top: 5285px;
 	margin-left: 470px;
 }
 
+.menuItemName {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 585px;
+}
+
+.menuItemName:after { 
+	content: ".....................................................................................................................";
+}
+
+#appetizersHeader {
+	margin-left: 300px;
+}
+
+#menuImage15 {
+	background-image: url('./assets/menu-images/appetizers/turkey-soup.jpg');
+	box-shadow: 0 5px 10px rgba(125,125,125,0.5);
+}
+
+#menuImage18 {
+	background-image: url('./assets/menu-images/appetizers/seafood-bisque.jpg');
+	box-shadow: 0 5px 10px rgba(125,125,125,0.5);
+}
+
+#menuImage19 {
+	background-image: url('./assets/menu-images/appetizers/signature-salad.jpg');
+	box-shadow: 0 5px 10px rgba(125,125,125,0.5);
+}
+
+#menuImage22 {
+	background-image: url('./assets/menu-images/appetizers/pretzel-tofu-squares.jpg');
+	box-shadow: 0 5px 10px rgba(125,125,125,0.5);
+}
+
+#menuImage24 {
+	background-image: url('./assets/menu-images/entrees/black-hog-chop.jpg');
+	box-shadow: 0 5px 10px rgba(125,125,125,0.5);
+}
+
+#menuImage25 {
+	background-image: url('./assets/menu-images/entrees/scallops.jpg');
+	box-shadow: 0 5px 10px rgba(125,125,125,0.5);
+}
+
+#menuImage28 {
+	background-image: url('./assets/menu-images/entrees/filet-mignon.jpg');
+	box-shadow: 0 5px 10px rgba(125,125,125,0.5);
+}
+
+#menuImage33 {
+	background-image: url('./assets/menu-images/entrees/ribeye.jpg');
+	box-shadow: 0 5px 10px rgba(125,125,125,0.5);
+}

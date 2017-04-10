@@ -40,11 +40,8 @@ export default React.createClass({
 		return {
 			name: '',
 			guests: '',
-			month: '',
-			day: '',
-			hour: '',
-			min: '',
-			notes: ''
+			notes: '',
+			date: ''
 		}
 	},
 	update(e) {
@@ -52,30 +49,29 @@ export default React.createClass({
 	},
 	handleSubmit(e) {
 		e.preventDefault()
-		addUser(this.state.name, this.state.guests, this.state.month, this.state.day, this.state.hour, this.state.min, this.state.notes)
+		addUser(this.state.name, this.state.guests, this.state.notes, this.state.date)
 		this.setState({
 			name: '',
 			guests: '',
-			month: '',
-			day: '',
-			hour: '',
-			min: '',
-			notes: ''
+			notes: '',
+			date: ''
 		})
 	},
 	render(){
 		return(
-			<form style={styles.form} onSubmit={this.handleSubmit}>
-				<input style={styles.input} onChange={this.update} type='text' name='name' placeholder='Name' value={this.state.name} />
-				<input style={styles.input} onChange={this.update} type='text' name='guests' placeholder='Number of People (max 12)' value={this.state.guests} />
-				<input style={styles.input} onChange={this.update} type='text' name='notes' placeholder='Special Requests' value={this.state.notes} />
-
-				<div style={styles.botLine}>
-					<Date />
-					
-					<button type='submit' style={styles.button} >Confirm Reservation</button>
-				</div>
-			</form>
+			<div>
+				<a name='reservations'></a>
+				<form style={styles.form} onSubmit={this.handleSubmit}>
+					<input style={styles.input} onChange={this.update} type='text' name='name' placeholder='Name' value={this.state.name} />
+					<input style={styles.input} onChange={this.update} type='text' name='guests' placeholder='Number of People (max 12)' value={this.state.guests} />
+					<input style={styles.input} onChange={this.update} type='text' name='notes' placeholder='Special Requests' value={this.state.notes} />
+					<input style={styles.input} onChange={this.update} type='date' name='date' placeholder='date' value={this.state.date} />
+					<div style={styles.botLine}>
+						
+						<button type='submit' style={styles.button} >Confirm Reservation</button>
+					</div>
+				</form>
+			</div>
 		)
 	}
 })

@@ -11,6 +11,9 @@ var styles = {
 		fontSize: '12px',
 		margin: '0 3px',
 		borderRadius: '3px'
+	},
+	empty: {
+		display: 'none'
 	}
 } 
 
@@ -27,7 +30,7 @@ export default React.createClass({
 			)
 		} else {
 			return (
-				<p></p>
+				<div style={styles.empty}></div>
 			)
 		}
 	}

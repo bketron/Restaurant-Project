@@ -11,89 +11,75 @@ var styles = {
 		padding: '75px 300px',
 		boxShadow: 'inset 0px 0px 80px rgba(0,0,0,0.05)'
 	},
-	lists: {
-		listStyleType: 'none',
-		padding: '0 20px 0 30px'
-	},
 	header: {
-		fontSize: '28px',
-		fontWeight: 'normal',
-		fontStyle: 'italic',
 		textAlign: 'center',
-		fontFamily: 'serif',
-		borderBottom: '1px solid black',
-		padding: '0 20px 10px 20px',
-		marginTop: '0'
-	},
-	name: {
-		fontFamily: 'Italliano, cursive',
-		fontSize: '20px',
-		height: '30px',
-		margin: '10px 0 5px',
-		textOverflow: 'ellipsis',
-		textAlign: 'center'
-	},
-	sideName: {
-		fontFamily: 'serif',
-		margin: 0,
-		fontSize: '12px',
-		fontStyle: 'italic',
-	},
-	sidePrice: {
-		fontSize: '12px',
-		margin: 0,
-		fontStyle: 'italic'
-	},
-	price: {
-		fontFamily: 'serif',
+		fontFamily: 'Raleway, sans-serif',
+		fontWeight: '800',
 		fontSize: '18px',
-		height: '20px',
-		lineHeight: '20px',
-		margin: 0,
-		position: 'relative',
-		top: '0px',
-		paddingRight: '15px'
-	},
-	description: {
-		fontFamily: 'serif',
-		fontWeight: 'lighter',
-		fontStyle: 'italic',
-		fontSize: '13px',
-		padding: '0',
-		margin: 0,
-		textAlign: 'center',
-		display: 'flex',
-		justifyContent: 'center'
-	},
-	sideItems: {
-		display: 'flex',
-		textAlign: 'center',
-		justifyContent: 'center'
-	},
-	iconSection: {
-		width: '100px',
-		height: '20px',
-		display: 'flex',
-		alignItems: 'center',
-		paddingLeft: '15px',
-		position: 'relative',
-		top: '6px'
-	},
-	icon: {
-		width: '20px',
-		height: '20px',
-		backgroundColor: 'black',
+		textTransform: 'uppercase',
+		backgroundColor: '#59E4DF',
+		color: '#366361',
 		color: 'white',
-		textAlign: 'center',
-		lineHeight: '20px',
-		fontSize: '12px',
-		position: 'relative',
-		top: '-1041px',
-		left: '548px'
+		height: '50px',
+		lineHeight: '50px',
+		padding: '0 20px',
+		margin: '0 auto',
+		width: '180px',
+		marginBottom: '40px',
 	},
-	itemInfo: {
+	lists: {
+		borderTop: '2px solid rgba(125,125,125,0.1)',
+		padding: 0,
+		marginBottom: '100px'
+	},
+	listItem: {
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		borderBottom: '2px solid rgba(125,125,125,0.1)'
+	},
+	itemContainer: {
+		display: 'flex',
+		padding: '20px 10px'
+	},
+	sideItemContainer: {
 		display: 'flex',
 		justifyContent: 'center',
+		padding: '20px 10px'
+	},
+	itemHeader: {
+		display: 'flex',
+		fontFamily: 'Raleway, sans-serif',
+		fontWeight: '800',
+		fontSize: '15px',
+		color: '#366361',
+		justifyContent: 'center',
+		margin: 'auto'
+	},
+	itemName: {
+		fontFamily: 'Raleway, sans-serif',
+		fontWeight: '800',
+		fontSize: '16px',
+		textTransform: 'uppercase',
+		color: '#366361',
+		margin: '0',
+		height: '30px'
+	},
+	itemPrice: {
+		margin: 0,
+		fontSize: '15px',
+		position: 'relative',
+		top: '-2px'
+	},
+	imageCon: {
+		width: '150px',
+		height: '150px',
+		borderRadius: '50%',
+		marginRight: '50px'
+	},
+	description: {
+		width: '600px',
+
 	}
 }
 
@@ -103,23 +89,24 @@ export default React.createClass({
 			<div style={styles.container}>
 
 				<div id="appetizers">
-					<p style={styles.header}>Appetizers</p>
+					<p id="appetizersHeader" style={styles.header}>Appetizers</p>
 
 					<ul style={styles.lists}>
 						{menu.appetizers.map(item=> (
-							<li key={'id' + item.id}>
-								<div className="namePrice">
-									<p style={styles.name}>{item.item}</p>
-									<div id={'item' + item.id} style={styles.itemInfo}>
-										<p id={'item' + item.id + 'price'}>{item.price}</p>
-										<div id={'item' + item.id + 'icons'}>
-											<ItemIcons item={item}/>
-										</div>	
-									</div>
-								</div>
+							<li key={'id' + item.id} style={styles.listItem}>
+								<div style={styles.itemContainer}>
+									<div style={styles.imageCon} id={"menuImage" + item.id}></div>
 
-								<div className="itemInfo">
-									<p style={styles.description}>{item.description}</p>
+									<div>
+										<div style={styles.itemHeader}>
+											<p style={styles.itemName} className="menuItemName">{item.item}</p>
+											<p style={styles.itemPrice}>{item.price}</p>
+										</div>
+
+										<div style={styles.itemInformation}>
+											<p style={styles.description}>{item.description}</p>
+										</div>
+									</div>
 								</div>
 							</li>
 							))}
@@ -132,19 +119,20 @@ export default React.createClass({
 
 					<ul style={styles.lists}>
 						{menu.entrees.map(item=> (
-							<li key={'id' + item.id}>
-								<div className="namePrice">
-									<p style={styles.name}>{item.item}</p>
-									<div id={'item' + item.id} style={styles.itemInfo}>
-										<p id={'item' + item.id + 'price'}>{item.price}</p>
-										<div id={'item' + item.id + 'icons'}>
-											<ItemIcons item={item}/>
-										</div>	
-									</div>
-								</div>
+							<li key={'id' + item.id} style={styles.listItem}>
+								<div style={styles.itemContainer}>
+									<div style={styles.imageCon} id={"menuImage" + item.id}></div>
 
-								<div className="itemInfo">
-									<p style={styles.description}>{item.description}</p>
+									<div>
+										<div style={styles.itemHeader}>
+											<p style={styles.itemName} className="menuItemName">{item.item}</p>
+											<p style={styles.itemPrice}>{item.price}</p>
+										</div>
+
+										<div style={styles.itemInformation}>
+											<p style={styles.description}>{item.description}</p>
+										</div>
+									</div>
 								</div>
 							</li>
 							))}
@@ -156,10 +144,15 @@ export default React.createClass({
 
 					<ul style={styles.lists}>
 						{menu.sides.map(item=> (
-							<li key={'id' + item.id}>
-								<div style={styles.sideItems}>
-									<p style={styles.sideName}>{item.item}........</p>
-									<p style={styles.sidePrice}>{item.price}</p>
+							<li key={'id' + item.id} style={styles.listItem}>
+								<div style={styles.sideItemContainer}>
+
+									<div>
+										<div style={styles.itemHeader}>
+											<p style={styles.itemName} className="menuItemName">{item.item}</p>
+											<p style={styles.itemPrice}>{item.price}</p>
+										</div>
+									</div>
 								</div>
 							</li>
 							))}

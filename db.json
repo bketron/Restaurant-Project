@@ -1,25 +1,17 @@
 {
   "users": [
     {
-      "name": "Brett",
-      "guests": "2",
-      "month": "",
-      "day": "",
-      "hour": "",
-      "min": "",
-      "notes": "none",
+      "name": "sdf;jwef",
+      "guests": "lskdjflskejf",
+      "notes": "lskjflskdjfe",
+      "date": "1997-10-20",
       "id": 1
-    },
-    {
-      "name": "",
-      "guests": "",
-      "month": "",
-      "day": "",
-      "hour": "",
-      "min": "",
-      "notes": "",
-      "id": 2
     }
   ],
-  "email": []
+  "email": [
+    {
+      "email": "sdfse@oiudslfkjsdf.com",
+      "id": 1
+    }
+  ]
 }

@@ -114,15 +114,9 @@ export default React.createClass({
 
 				<p style={styles.question}>Like what you see?</p>
 				<h1 style={styles.title}>Make a Reservation!</h1>
-
-				<Form />
 				
-				<div style={styles.arrowCon}>
-					<i style={styles.monthArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
-					<i style={styles.dayArrow}  className="fa fa-angle-double-down" aria-hidden="true"></i>
-					<i style={styles.hourArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
-					<i style={styles.minArrow} className="fa fa-angle-double-down" aria-hidden="true"></i>
-				</div>
+				<Form />
+
 			</div>
 		)	
 	}

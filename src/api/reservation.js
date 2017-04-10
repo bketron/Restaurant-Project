@@ -10,9 +10,9 @@ export function getUsers() {
 	})
 }
 
-export function addUser(name, guests, month, day, hour, min, notes){
+export function addUser(name, guests, notes, date){
 	axios.post('http://localhost:3001/users', {
-		name, guests, month, day, hour, min, notes
+		name, guests, notes, date
 	}).then(res=>{
 		getUsers()
 	})

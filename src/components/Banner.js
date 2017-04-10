@@ -9,7 +9,7 @@ var styles = {
 		display: 'flex',
 		justifyContent: 'center',
 		borderBottom: '1px solid rgba(125,125,125,0.2)',
-		zIndex: '2',
+		zIndex: '10',
 		paddingTop: '10px',
 		boxShadow: '0 0 20px rgba(0,0,0,0.1)' 
 	},
@@ -77,13 +77,13 @@ export default React.createClass({
 			<div style={styles.container}>
 				<ul style={styles.list1}>
 					<li className="bannerLink">
-						<a style={styles.link} href="#">Our Story</a>
+						<a style={styles.link} href="#ourStory">Our Story</a>
 					</li>
 					<li className="bannerLink">
-						<a style={styles.link} href="#">Menu</a>
+						<a style={styles.link} href="#menu">Menu</a>
 					</li>
 					<li className="bannerLink">
-						<a style={styles.link} href="#">Catering</a>
+						<a style={styles.link} href="#catering">Catering</a>
 					</li>
 				</ul>
 
@@ -94,13 +94,13 @@ export default React.createClass({
 
 				<ul style={styles.list2}>
 					<li className="bannerLink">
-						<a style={styles.link} href="#">News</a>
+						<a style={styles.link} href="#news">News</a>
 					</li>
 					<li className="bannerLink">
-						<a style={styles.link} href="#">Reservations</a>
+						<a style={styles.link} href="#reservations">Reservations</a>
 					</li>
 					<li className="bannerLink">
-						<a style={styles.link} href="#">Directions</a>
+						<a style={styles.link} href="#directions">Directions</a>
 					</li>
 				</ul>
 

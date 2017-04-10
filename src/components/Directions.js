@@ -36,13 +36,20 @@ var styles = {
 	},
 	info2: {
 		display: 'flex',
-		justifyContent: 'center'
+		justifyContent: 'center',
+		position: 'relative',
+		top: '-55px',
+		left: '5px'
 	},
 	icon: {
 		color: 'white',
 		fontSize: '6px',
 		margin: '0 10px',
 		lineHeight: '18px'
+	},
+	head: {
+		position: 'relative',
+		top: '-65px'
 	}
 }
 
@@ -52,16 +59,19 @@ export default React.createClass({
 			<div id="directionsMain">
 				<div id="directionsParentContainer">
 					<div id="directionsContainer" style={styles.container}>
-						<div style={styles.info}>
+						<a name='directions'></a>
+
+						<div style={styles.head}>
 							<p style={styles.question}>Need help getting here?</p>
 							<h1 style={styles.header}>Restaurant Location</h1>
+						</div>
 
-							<div style={styles.info2}>
+						<div style={styles.info2}>
 								<p style={styles.address}>1112 S Casino Center Blvd, Las Vegas, NV 89104</p>
 								<i style={styles.icon} className="fa fa-circle" aria-hidden="true"></i>
 								<p style={styles.phoneNum}>(702) 560-6797</p>
-							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
