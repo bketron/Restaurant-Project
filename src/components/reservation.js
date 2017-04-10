@@ -63,7 +63,7 @@ export default React.createClass({
 				<a name='reservations'></a>
 				<form style={styles.form} onSubmit={this.handleSubmit}>
 					<input style={styles.input} onChange={this.update} type='text' name='name' placeholder='Name' value={this.state.name} />
-					<input style={styles.input} onChange={this.update} type='text' name='guests' placeholder='Number of People (max 12)' value={this.state.guests} />
+					<input style={styles.input} onChange={this.update} type='number' name='guests' placeholder='Number of People (max 12)' value={this.state.guests} />
 					<input style={styles.input} onChange={this.update} type='text' name='notes' placeholder='Special Requests' value={this.state.notes} />
 					<input style={styles.input} onChange={this.update} type='date' name='date' placeholder='date' value={this.state.date} />
 					<div style={styles.botLine}>
