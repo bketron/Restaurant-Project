@@ -71,7 +71,7 @@ export default React.createClass({
 				<div id="cateringContainer" style={styles.container}>
 					<p style={styles.question}>Interested in our catering options?</p>
 					<h1 style={styles.sorry}>Sorry!</h1>
-					<p style={styles.para}>We do not offer catering at this time, if you are interested in joining our mailing list please click the button below to sign up.</p>
+					<p style={styles.para}>We do not offer catering at this time, if you are interested in joining our mailing list please enter your email then click the button below to sign up.</p>
 					<div style={styles.input}>
 						<form onSubmit={this.handleSubmit}>
 							<input style={styles.textbox} onChange={this.update} name='email' type="email" placeholder="Your Email" value={this.state.email}></input>					

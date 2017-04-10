@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom' 
+import { Link } from 'react-router-dom'
 
 var styles = {
 	question: {
@@ -77,4 +77,4 @@ export default React.createClass({
 			</div>
 		)
 	}
-})
+})  

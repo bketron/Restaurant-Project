@@ -1,4 +1,5 @@
 import React from 'react'
+import News from './news.json'
 
 var styles = {
 	container: {
@@ -15,7 +16,6 @@ var styles = {
 		textAlign: 'center',
 		fontFamily: 'Great Vibes',
 		marginBottom: '30px',
-		marginTop: '20px'
 	},
 	infoSection: {
 		display: 'flex'
@@ -25,7 +25,7 @@ var styles = {
 		height: '350px',
 		borderRadius: '50%',
 		border: '10px solid #f0f0f0',
-		boxShadow: 'inset 0 0 50px 10px rgba(0,0,0,0.3)'
+		boxShadow: 'inset 0 0 50px 10px rgba(0,0,0,0.3)',
 	},
 	text: {
 		width: '600px',
@@ -42,7 +42,7 @@ var styles = {
 		marginLeft: '150px',
 		boxShadow: '0 0 60px rgba(0,0,0,0.2)',
 		position: 'relative',
-		top: '-70px'
+		top: '-40px'
 	},
 	icon: {
 		fontSize: '12px',
@@ -59,6 +59,35 @@ var styles = {
 		fontWeight: 'lighter',
 		padding: '7px 15px',
 		fontFamily: 'system-ui'
+	},
+	newsHeading: {
+		display: 'flex',
+		width: '357px',
+		marginLeft: '185px',
+		color: 'white',
+		display: 'flex',
+		borderBottom: '3px solid white',
+		paddingBottom: '4px'
+	},
+	title: {
+		margin: 0,
+		color: '#366361',
+		fontFamily: 'Raleway, sans-serif',
+		fontWeight: '800',
+		textTransform: 'uppercase',
+		fontSize: '19px'
+
+	},
+	date: {
+		margin: 0,
+		textTransform: 'uppercase',
+		fontSize: '12px',
+		position: 'relative',
+		top: '7px',
+		marginLeft: '3px'
+	},
+	article: {
+		margin: 0
 	}
 }
 
@@ -76,12 +105,14 @@ export default React.createClass({
 						</div>
 
 						<div>
-							<div id="newsTextBox">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem deleniti eos ad corporis, ullam sint minus! Natus ipsa, praesentium minus voluptates incidunt adipisci quaerat cupiditate expedita ex nesciunt ratione architecto!
-								Dolorem esse, eius neque adipisci nesciunt quo reprehenderit nihil facere cumque maiores libero dolor, numquam, itaque iusto quibusdam? Vel, suscipit reprehenderit alias perspiciatis molestiae dignissimos assumenda qui officia non nam!
-								Expedita repellat esse ea, soluta culpa voluptatum vero voluptates architecto facilis nam inventore molestiae itaque, et dignissimos laborum autem rerum saepe! Quasi fugit dolore, inventore unde at dolorem iure consequuntur.
-								Voluptatum possimus nam impedit autem ipsa architecto commodi quibusdam corrupti sapiente provident maiores, cum velit veniam quae dolorum nihil sed nisi odio aut numquam. Ratione, dolore sint. Nesciunt, pariatur, laudantium.
-								Debitis tempore aut sint dolorum tenetur necessitatibus perferendis et ipsum, accusamus voluptate fugiat quos suscipit placeat veniam soluta harum sed odit ipsam, officiis saepe. Quos praesentium minima excepturi rem nisi.
+							<div>
+							<div style={styles.newsHeading}>
+
+								<p style={styles.title}>{News.title}</p>
+								<p style={styles.date}>- {News.date_published}</p>
+							
+							</div>
+								<p id="newsTextBox">{News.post}</p>
 							</div>	
 
 							<a style={styles.readmore} href="">Read More <i className="fa fa-angle-right" aria-hidden="true"></i>

@@ -118,6 +118,7 @@ body {
 
 #grandOpeningPic {
 	background-image: url('./assets/design-images/grandopening-new.jpg');
+
 }
 
 #bisHoursSection {
@@ -169,6 +170,7 @@ select::placeholder {
 	text-overflow: ellipsis;
 	margin-bottom: 30px;
 	margin-left: 175px;
+	margin-top: 10px;
 	text-align: center;
 	color: white;
 	font-size:17px;
