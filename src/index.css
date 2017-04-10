@@ -417,7 +417,9 @@ select::placeholder {
 	left:440px;
 }
 
-
+.footer a:link {
+	cursor: pointer;
+}
 
 
 

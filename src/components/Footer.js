@@ -23,28 +23,32 @@ var styles = {
 		color: 'white',
 		position: 'relative',
 		top: '4px',
-		left: '8px'
+		left: '8px',
+		cursor: 'pointer'
 	},
 	twitter: {
 		fontSize: '15px',
 		color: 'white',
 		position: 'relative',
 		top: '4px',
-		left: '7px'
+		left: '7px',
+		cursor: 'pointer'
 	},
 	instagram: {
 		height: '12px',
 		width: '12px',
 		position: 'relative',
 		top: '4px',
-		left: '7px'
+		left: '7px',
+		cursor: 'pointer'
 	},
 	openTable: {
 		height: '15px',
 		width: '15px',
 		position: 'relative',
 		top: '5px',
-		left: '5px'
+		left: '5px',
+		cursor: 'pointer'
 	},
 	icons: {
 		height: '25px',
@@ -52,7 +56,8 @@ var styles = {
 		backgroundColor: 'rgba(125,125,125,0.1)',
 		boxShadow: '0 1px 1px 1px rgba(0,0,0,0.2)',
 		borderRadius: '50%',
-		margin: '5px'
+		margin: '5px',
+		cursor: 'pointer'
 	},
 	footerText: {
 		color: 'rgba(0,0,0,0.2)',
@@ -60,37 +65,40 @@ var styles = {
 		padding: '0 350px',
 		fontSize: '11px',
 		marginTop: '25px'
+	},
+	link: {
+		cursor: 'pointer'
 	}
 }
 
 export default React.createClass({
 	render() {
 		return (
-			<div style={styles.container}>
+			<div style={styles.container} className="footer">
 
 				<div style={styles.main}>
 
 					<ul style={styles.iconList}>
 						<li style={styles.icons}>
-							<a href="#" alt="Our Facebook page">
+							<a style={styles.link} href="https://www.facebook.com" target="_blank" alt="Our Facebook page">
 								<i style={styles.facebook} className="fa fa-facebook" aria-hidden="true"></i>
 							</a>
 						</li>
 
 						<li style={styles.icons}>
-							<a href="#" alt="Our Twitter page">
+							<a style={styles.link} href="https://www.twitter.com" target="_blank" alt="Our Twitter page">
 								<i style={styles.twitter} className="fa fa-twitter" aria-hidden="true"></i>
 							</a>
 						</li>
 
 						<li style={styles.icons}>
-							<a href="#">
+							<a style={styles.link} href="https://www.instagram.com" target="_blank">
 								<img style={styles.instagram} id="instagramIcon" src={require('../assets/icon-images/instagram.png')} alt="Our Instagram"/>
 							</a>
 						</li>
 
 						<li style={styles.icons}>
-							<a href="#" alt="Our Open Table page">
+							<a style={styles.link} href="https://www.opentable.com" target="_blank" alt="Our Open Table page">
 								<img  style={styles.openTable} id="openTableIcon" src={require('../assets/icon-images/opentable.png')} alt="Our Open Table page"/>
 							</a>
 						</li>
